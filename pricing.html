@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>KOHWA</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Footer-with-button-logo.css">
+  </head>
+  <body>
+
+    <header class="clearfix">
+
+    <nav class="navbar  navbar-expand-lg fixed-top navbar-dark bg-success">
+      <a class="navbar-brand" href="#"><img src="img/logo.jpg">Kohwa</img></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Cost Of Production</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+           <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2 mb-sm-0" type="search" placeholder="Search" aria-label="Search">
+           <button value="click me" onclick="myFunction()" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    
+         <!-- Start Calculator Section -->
+         <div class="container" style="margin-top: 100px;">
+            <div class="row">
+          <div class="col-md-3">
+           <iframe src="img/ads.png" width="250"></iframe>
+              
+          </div>
+          <div class="col-md-9" style=" width: 100%;">
+          <h2>Economics - Cost of Production Calculator</h2>
+          <p>
+      &#8203;The Cost of Production Calculator will help you evaluate the costs and returns of crops.</p>
+
+              <p>Below is a cost of production calculator to help you estimate the costs and returns of corn and soybean cropping systems. To run the calculator, you can either use 1) predetermined variable costs based on figures calculated by Iowa State Extension or 2) your own variable costs or figures calculated by your nearest college of agriculture. Simply select&nbsp;an option below to get started.</p>
+              <ol>
+                <li>Input your expected "Market Prices."</li>
+                <li>Input expected "Planted Acres" per crop.</li>
+                <li>Input your "Expected Yield" for all 3 cropping systems.</li>
+              </ol>
+      
+          <div id="CostOfProduction">
+          
+            <div id="Tools_Calcs">
+              <table border="0" cellspacing="0" cellpadding="10" width="100%">
+                <tbody>
+                  <tr>
+                    <td class="tc_T" valign="top"><span class="stepNum">1</span> <span class="stepTitle">Expected Market Prices</span></td>
+                    <td class="tc_T"><span class="colHeader">Maize</span>
+                      <br>
+                      <label>$</label> <div class="textfield"><input id="price_C" class="styled" checked="0" name="price_C" size="7" type="text" style="width: 50px; display: block;"></div> <label>/tonne</label></td>
+                    <td class="tc_T"><span class="colHeader">Soyabeans</span>
+                      <br>
+                      <label>$ </label><div class="textfield"><input id="price_SB" class="styled" checked="0" name="price_SB" size="7" type="text" style="width: 50px; display: block;"></div> <label>/tonne</label></td>
+                    <td class="tc_T">&nbsp;</td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="tc_T"><span class="stepNum">2</span> <span class="stepTitle">Planted Acres</span></td>
+                    <td class="tc_T"><span class="colHeader">Crops</span>
+                      <br>
+                      <div class="textfield"><input id="acres_CC" class="styled" checked="0" name="acres_CC" size="7" type="text" style="width: 50px; display: block;"></div> <label>acre</label></td>
+                    <td class="tc_T"><span class="colHeader">Corn after Beans</span>
+                      <br>
+                      <div class="textfield"><input id="acres_CB" class="styled" checked="0" name="acres_CB" size="7" type="text" style="width: 50px; display: block;"></div> <label>acre</label></td>
+                    <td class="tc_T"><span class="colHeader">Beans after Corn</span>
+                      <br>
+                      <div class="textfield"><input id="acres_SB" class="styled" checked="0" name="acres_SB" size="7" type="text" style="width: 50px; display: block;"></div> <label>acre</label></td>
+                  </tr>
+
+                  <tr>
+                    <td valign="top"><span class="stepNum">3</span> <span class="stepTitle">Expected Yields</span></td>
+                    <td><div class="textfield"><input id="yieldGoal_CC" class="styled" checked="0" name="yieldGoal_CC" size="7" type="text" value="185" style="width: 50px; display: block;"></div> <label>tonne/acre</label></td>
+                    <td><div class="textfield"><input id="yieldGoal_CB" class="styled" checked="0" name="yieldGoal_CB" size="7" type="text" value="200" style="width: 50px; display: block;"></div> <label>tonne/acre</label></td>
+                    <td><div class="textfield"><input id="yieldGoal_SB" class="styled" checked="0" name="yieldGoal_SB" size="7" type="text" value="50" style="width: 50px; display: block;"></div> <label>tonne/acre</label></td>
+                  </tr>
+
+                  <tr>
+                    <td class="tc_T" valign="top"><span class="stepNum">4</span> <span class="stepTitle">Variable Costs</span></td>
+                    <td class="tc_T" colspan="3" valign="top">
+                  <p>
+                      <input id="vc_1" checked="0" name="vc" type="radio" value="1"> Use predetermined Variable costs <span class="portalErrorText">*</span> 
+                      <br>
+                      <input id="vc_0" checked="true" name="vc" type="radio" value="0"> Allow me to enter my own Variable costs</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tc_T">&nbsp;</td>
+                    <td class="tc_T"><span class="colHeader">Corn after Corn</span></td>
+                    <td class="tc_T"><span class="colHeader">Corn after Beans</span></td>
+                    <td class="tc_T"><span class="colHeader">Beans after Corn</span></td>
+                  </tr>
+
+                  <tr id="tr_vc_manual_1" style="display: none;">
+
+                    <td>Fertilizer and Lime:</td>
+                    <td><div class="textfield"><input id="vc_CC_1" class="styled" checked="0" name="vc_CC_1" size="7" type="text" value="153.50" style="width: 50px; display: block;"></div> 
+                    <br>
+                    <span id="calc_CC_Fert" class="calcLink">Calculate Costs</span></td>
+                    <td><div class="textfield"><input id="vc_CB_1" class="styled" checked="0" name="vc_CB_1" size="7" type="text" value="132.17" style="width: 50px; display: block;"></div> 
+                      <br>
+                    <span id="calc_CB_Fert" class="calcLink">Calculate Costs</span></td>
+                    <td><div class="textfield"><input id="vc_SB_1" class="styled" checked="0" name="vc_SB_1" size="7" type="text" value="59.95" style="width: 50px; display: block;"></div> 
+                      <br>
+                    <span id="calc_SB_Fert" class="calcLink">Calculate Costs</span></td>
+                </tr>
+
+                <tr id="tr_vc_manual_2" style="display: none;">
+                    <td class="tc_T">Herbicide:</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_2" class="styled" checked="0" name="vc_CC_2" size="7" type="text" value="35.50" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_2" class="styled" checked="0" name="vc_CB_2" size="7" type="text" value="35.50" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_2" class="styled" checked="0" name="vc_SB_2" size="7" type="text" value="26.50" style="width: 50px; display: block;"></div></td>
+                </tr>
+
+                <tr id="tr_vc_manual_3" style="display: none;">
+                    <td class="tc_T">Insecticide:</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_3" class="styled" checked="0" name="vc_CC_3" size="7" type="text" value="23.00" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_3" class="styled" checked="0" name="vc_CB_3" size="7" type="text" value="0.00" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_3" class="styled" checked="0" name="vc_SB_3" size="7" type="text" value="0.00" style="width: 50px; display: block;"></div></td>
+                </tr>
+
+                <tr id="tr_vc_manual_4" style="display: none;">
+                    <td class="tc_T">Seed**:</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_4" class="styled" checked="0" name="vc_CC_4" size="7" type="text" value="134.90" style="width: 50px; display: block;"></div> 
+                <br>
+                    <span id="calc_CC_Seed" class="calcLink">
+                <br>Calculate Costs</span></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_4" class="styled" checked="0" name="vc_CB_4" size="7" type="text" value="134.90" style="width: 50px; display: block;"></div> 
+                <br>
+                    <span id="calc_CB_Seed" class="calcLink">
+                <br>Calculate Costs</span></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_4" class="styled" checked="0" name="vc_SB_4" size="7" type="text" value="55.00" style="width: 50px; display: block;"></div> 
+                <br>
+                    <span id="calc_SB_Seed" class="calcLink">
+                <br>Calculate Costs</span></td>
+                </tr>
+
+                <tr id="tr_vc_manual_5" style="display: none;">
+                    <td class="tc_T">Drying</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_5" class="styled" checked="0" name="vc_CC_5" size="7" type="text" value="35.52" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_5" class="styled" checked="0" name="vc_CB_5" size="7" type="text" value="38.40" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_5" class="styled" checked="0" name="vc_SB_5" size="7" type="text" value="0.00" style="width: 50px; display: block;"></div></td>
+                </tr>
+
+                <tr id="tr_vc_manual_6" style="display: none;">
+                    <td class="tc_T">Grain Hauling:</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_6" class="styled" checked="0" name="vc_CC_6" size="6" type="text" value="7.06" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_6" class="styled" checked="0" name="vc_CB_6" size="6" type="text" value="7.63" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_6" class="styled" checked="0" name="vc_SB_6" size="6" type="text" value="1.91" style="width: 50px; display: block;"></div></td>
+                </tr>
+
+                <tr id="tr_vc_manual_7" style="display: none;">
+                    <td class="tc_T">Preharvest &amp; <br>Harvest Machinery:</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_7" class="styled" checked="0" name="vc_CC_7" size="7" type="text" value="42.16" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_7" class="styled" checked="0" name="vc_CB_7" size="7" type="text" value="37.89" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_7" class="styled" checked="0" name="vc_SB_7" size="7" type="text" value="33.30" style="width: 50px; display: block;"></div></td>
+                </tr>
+
+                <tr id="tr_vc_manual_8" style="display: none;">
+                    <td class="tc_T">Labor:</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_8" class="styled" checked="0" name="vc_CC_8" size="7" type="text" value="37.05" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_8" class="styled" checked="0" name="vc_CB_8" size="7" type="text" value="33.80" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_8" class="styled" checked="0" name="vc_SB_8" size="7" type="text" value="29.25" style="width: 50px; display: block;"></div></td>
+                </tr>
+
+                <tr id="tr_vc_manual_9" style="display: none;">
+                    <td class="tc_T">Crop Insurance:</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_9" class="styled" checked="0" name="vc_CC_9" size="7" type="text" value="14.60" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_9" class="styled" checked="0" name="vc_CB_9" size="7" type="text" value="14.60" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_9" class="styled" checked="0" name="vc_SB_9" size="7" type="text" value="8.90" style="width: 50px; display: block;"></div></td>
+                </tr>
+
+                <tr id="tr_vc_manual_10" style="display: none;">
+                    <td class="tc_T">Irrigation:<br>Univ. of ZWE - $125/A (10" of water)</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_10" class="styled" checked="0" name="vc_CC_10" size="7" type="text" value="0.00" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_10" class="styled" checked="0" name="vc_CB_10" size="7" type="text" value="0.00" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_10" class="styled" checked="0" name="vc_SB_10" size="7" type="text" value="0.00" style="width: 50px; display: block;"></div></td>
+                </tr>
+
+                <tr id="tr_vc_manual_11" style="display: none;">
+                    <td class="tc_T">Other (Interest, etc.)***:</td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CC_11" class="styled" checked="0" name="vc_CC_11" size="7" type="text" value="24.22" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_CB_11" class="styled" checked="0" name="vc_CB_11" size="7" type="text" value="22.59" style="width: 50px; display: block;"></div></td>
+                    <td class="tc_T"><div class="textfield"><input id="vc_SB_11" class="styled" checked="0" name="vc_SB_11" size="7" type="text" value="16.03" style="width: 50px; display: block;"></div></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_T"><span class="resultSubTotals">Total Expenses: </span></td>
+                    <td class="tc_T"><span class="resultSubTotals">$<span id="vc_CC_Total">507.51</span></span></td>
+                    <td class="tc_T"><span class="resultSubTotals">$<span id="vc_CB_Total">457.48</span></span></td>
+                    <td class="tc_T"><span class="resultSubTotals">$<span id="vc_SB_Total">230.84</span></span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"><img src="/CMRoot/images/spacer.gif" alt="" width="1" height="5"></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_Results"><span class="resultsHeader">Results</span></td>
+                    <td class="tc_Results" colspan="3"><img class="arrow" src="img/arrow.png" alt="arrow" width="49" height="33"></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_Results tc_T">&nbsp;</td>
+                    <td class="tc_Results tc_T"><span class="colHeader">Corn after Corn</span></td>
+                    <td class="tc_Results tc_T"><span class="colHeader">Corn after Beans</span></td>
+                    <td class="tc_Results tc_T"><span class="colHeader">Beans after Corn</span></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_Results"><span class="resultSubTotals">Total Income:</span></td>
+                    <td class="tc_Results"><span class="resultSubTotals">$<span id="ti_CC">480.00</span></span></td>
+                    <td class="tc_Results"><span class="resultSubTotals">$<span id="ti_CB">48000.00</span></span></td>
+                    <td class="tc_Results"><span class="resultSubTotals">$<span id="ti_SB">0.00</span></span></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_Results">&nbsp;&nbsp;Market Income</td>
+                    <td class="tc_Results">$<span id="marketIncome_CC">480.00</span></td>
+                    <td class="tc_Results">$<span id="marketIncome_CB">48000.00</span></td>
+                    <td class="tc_Results">$<span id="marketIncome_SB">0.00</span></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_Results">&nbsp;&nbsp;LDP:</td>
+                    <td class="tc_Results">$<span id="ldp_CC">0</span></td>
+                    <td class="tc_Results">$<span id="ldp_CB">0</span></td>
+                    <td class="tc_Results">$<span id="ldp_SB">0.000</span></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_Results">&nbsp;&nbsp;CCP:</td>
+                    <td class="tc_Results">$<span id="ccp_CC">0</span></td>
+                    <td class="tc_Results">$<span id="ccp_CB">0</span></td>
+                    <td class="tc_Results">$<span id="ccp_SB">0.000</span></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_Results tc_T"><span class="resultSubTotals">Net Income per<br>Planted Acre:</span></td>
+                    <td class="tc_Results tc_T"><span class="resultSubTotals">$<span id="net_CC">-27.51</span></span></td>
+                    <td class="tc_Results tc_T"><span class="resultSubTotals">$<span id="net_CB">47542.52</span></span></td>
+                    <td class="tc_Results tc_T"><span class="resultSubTotals">$<span id="net_SB">-230.84</span></span></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_Results tc_T"><span class="resultSubTotals">Net Income:</span></td>
+                    <td class="tc_Results tc_T"><span class="resultSubTotals">$<span id="netPerCrop_CC">-55.02</span></span></td>
+                    <td class="tc_Results tc_T"><span class="resultSubTotals">$<span id="netPerCrop_CB">0.00</span></span></td>
+                    <td class="tc_Results tc_T"><span class="resultSubTotals">$<span id="netPerCrop_SB">0.00</span></span></td>
+                </tr>
+
+                <tr>
+                    <td class="tc_Results tc_T"><span class="resultTotals">Total Farm Income:</span></td>
+                    <td class="tc_Results tc_T" colspan="3"><span class="resultTotals"><span id="total">-$55.02</span></span></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div><!-- CostOfProduction -->
+      
+        <p>&nbsp;</p>
+            <p>* Harrison, <a href="#" target="_blank">Estimated Costs of Crop Production in Zimbabwe - 2017</a>. Irrigation and storage costs not included. All predetermined variable costs are based on 185 bg/A, &nbsp;200 bg/A and 50 bg/A yield scenarios. &nbsp;If a different yield is entered costs may vary, which is not reflected in the calculator.</p>
+            <p>
+            <strong>Note:</strong> This calculator only includes variable costs and does not consider Fixed costs including land costs. While labor is usually a fixed cost, when deciding among alternative crops, labor should be considered a variable cost. Labor costs have been included in this calculator.</p>
+
+            <p>*** Includes misc. costs and interest on preharvest variable costs figured @ 8 months @ 5%</p>
+        <p>&nbsp;</p>
+        
+        <div class="backToTop">
+           <form class="form-inline my-2 my-lg-0">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Back to Top</button>
+            </form>
+        </div>
+      </div>
+    </div><!-- row -->
+  </div><!-- row -->
+</div><!-- end of container -->
+        <!-- End Calculator Section -->
+
+    <!-- Start Footer Section -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="index.html"><img class="rounded img-fluid" src="img/logo.png" height="180" width="200" alt="Responsive image"></a>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="contact us.html">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="https://twitter.com/kohwa_pjh" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/kohwa.kohwa.9" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://plus.google.com/u/0/108251181920522714979" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Footer Section -->
+        <!-- Start Copyright Section -->
+        <div class="footer-copyright">
+            <p>Copyright © 2017. All Rights Reserved. Design and Developed by PJH </p>
+        </div>
+        <!-- End Copyright Section -->
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/style.js"></script>
+
+   
+  </body>
+</html>
